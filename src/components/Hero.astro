@@ -1,10 +1,11 @@
 ---
+const BASE = import.meta.env.BASE_URL?.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 ---
 
 <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
   <!-- Background -->
   <div class="absolute inset-0 z-0">
-    <img src={`${import.meta.env.BASE_URL}hero-bg.png`} alt="" class="w-full h-full object-cover" />
+  <img src={`${BASE}hero-bg.png`} alt="" class="w-full h-full object-cover" />
     <!-- Overlay for better text readability -->
     <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-white/50"></div>
   </div>
@@ -36,7 +37,7 @@
 
       <!-- Visual -->
       <div class="flex justify-center">
-        <img src={`${import.meta.env.BASE_URL}bridge.png`} alt="Bridge visualization showing the path from early stage to VC-backed growth" class="w-full max-w-lg" />
+  <img src={`${BASE}bridge.png`} alt="Bridge visualization showing the path from early stage to VC-backed growth" class="w-full max-w-lg" />
       </div>
     </div>
   </div>
