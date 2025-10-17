@@ -3,177 +3,116 @@
 
 <section id="contact" class="section bg-white">
   <div class="container-custom">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-5xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-ag-ink mb-6">
           Contact AgD2
         </h2>
-        <p class="text-xl text-ag-muted">
+        <p class="text-xl text-ag-muted mb-8">
           Ready to become investor-ready? Let's talk.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Contact Form -->
-        <div class="bg-ag-cream rounded-xl p-8">
-          <h3 class="text-2xl font-display font-bold text-ag-ink mb-6">
-            Get in Touch
-          </h3>
-          
-          <form 
-            action="mailto:hugh@agd2.com" 
-            method="post" 
-            enctype="text/plain"
-            class="space-y-4"
-          >
-            <div>
-              <label for="name" class="block text-sm font-semibold text-ag-ink mb-2">
-                Name *
-              </label>
-              <input 
-                type="text" 
-                id="name" 
-                name="name" 
-                required
-                class="w-full px-4 py-3 rounded-lg border border-ag-muted/30 focus:border-ag-primary focus:ring-2 focus:ring-ag-primary/20 outline-none transition-all"
-                placeholder="Your name"
-              />
+      <!-- Contact Cards -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Email Card -->
+        <div class="bg-ag-cream rounded-xl p-8 hover:shadow-xl transition-shadow">
+          <div class="flex items-start space-x-4">
+            <div class="w-14 h-14 bg-ag-primary rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
             </div>
-
-            <div>
-              <label for="email" class="block text-sm font-semibold text-ag-ink mb-2">
-                Email *
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                required
-                class="w-full px-4 py-3 rounded-lg border border-ag-muted/30 focus:border-ag-primary focus:ring-2 focus:ring-ag-primary/20 outline-none transition-all"
-                placeholder="your@email.com"
-              />
-            </div>
-
-            <div>
-              <label for="company" class="block text-sm font-semibold text-ag-ink mb-2">
-                Company
-              </label>
-              <input 
-                type="text" 
-                id="company" 
-                name="company"
-                class="w-full px-4 py-3 rounded-lg border border-ag-muted/30 focus:border-ag-primary focus:ring-2 focus:ring-ag-primary/20 outline-none transition-all"
-                placeholder="Your company name"
-              />
-            </div>
-
-            <div>
-              <label for="stage" class="block text-sm font-semibold text-ag-ink mb-2">
-                Startup Stage
-              </label>
-              <select 
-                id="stage" 
-                name="stage"
-                class="w-full px-4 py-3 rounded-lg border border-ag-muted/30 focus:border-ag-primary focus:ring-2 focus:ring-ag-primary/20 outline-none transition-all"
+            <div class="flex-1">
+              <h3 class="font-display font-bold text-ag-ink text-xl mb-2">Email Us</h3>
+              <p class="text-ag-muted mb-3">Reach out directly to discuss how we can help your startup</p>
+              <a 
+                href="mailto:hugh@agd2.com" 
+                class="text-ag-primary hover:text-ag-primary-600 font-semibold text-lg transition-colors inline-flex items-center"
               >
-                <option value="">Select stage...</option>
-                <option value="pre-seed">Pre-seed</option>
-                <option value="seed">Seed</option>
-                <option value="series-a">Series A</option>
-                <option value="series-b">Series B+</option>
-                <option value="other">Other</option>
-              </select>
+                hugh@agd2.com
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
             </div>
-
-            <div>
-              <label for="message" class="block text-sm font-semibold text-ag-ink mb-2">
-                Message *
-              </label>
-              <textarea 
-                id="message" 
-                name="message" 
-                required
-                rows="4"
-                class="w-full px-4 py-3 rounded-lg border border-ag-muted/30 focus:border-ag-primary focus:ring-2 focus:ring-ag-primary/20 outline-none transition-all resize-none"
-                placeholder="Tell us about your startup and how we can help..."
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary w-full">
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
 
-        <!-- Contact Information -->
-        <div class="space-y-8">
-          <div>
-            <h3 class="text-2xl font-display font-bold text-ag-ink mb-6">
-              Contact Information
-            </h3>
-            
-            <div class="space-y-6">
-              <div class="flex items-start space-x-4">
-                <div class="w-12 h-12 bg-ag-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-display font-bold text-ag-ink mb-1">Email</h4>
-                  <a href="mailto:hugh@agd2.com" class="text-ag-primary hover:text-ag-primary-600 transition-colors">
-                    hugh@agd2.com
-                  </a>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div class="w-12 h-12 bg-ag-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-display font-bold text-ag-ink mb-1">Locations</h4>
-                  <p class="text-ag-muted">Durham, North Carolina</p>
-                  <p class="text-ag-muted">Tampa, Florida</p>
-                </div>
+        <!-- Locations Card -->
+        <div class="bg-ag-cream rounded-xl p-8 hover:shadow-xl transition-shadow">
+          <div class="flex items-start space-x-4">
+            <div class="w-14 h-14 bg-ag-primary rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display font-bold text-ag-ink text-xl mb-2">Our Locations</h3>
+              <p class="text-ag-muted mb-3">Our team is based across key agricultural innovation hubs</p>
+              <div class="space-y-2">
+                <p class="text-ag-ink font-medium">📍 Durham, North Carolina</p>
+                <p class="text-ag-ink font-medium">📍 Tampa, Florida</p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="bg-gradient-to-br from-ag-primary to-ag-primary-600 rounded-xl p-8 text-white">
-            <h4 class="text-xl font-display font-bold mb-3">
-              Why AgD2?
-            </h4>
-            <ul class="space-y-3 text-sm">
-              <li class="flex items-start">
-                <svg class="w-5 h-5 text-ag-accent mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>We make you investor-ready</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="w-5 h-5 text-ag-accent mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Decades of combined AgTech experience</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="w-5 h-5 text-ag-accent mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Hands-on, boots-on-the-ground approach</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="w-5 h-5 text-ag-accent mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Extensive network of domain experts</span>
-              </li>
-            </ul>
+      <!-- Why AgD2 Box -->
+      <div class="bg-gradient-to-br from-ag-primary to-ag-primary-600 rounded-2xl p-10 text-white">
+        <div class="max-w-3xl mx-auto text-center">
+          <h3 class="text-3xl font-display font-bold mb-6">
+            Why Work with AgD2?
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6 text-left">
+            <div class="flex items-start space-x-3">
+              <svg class="w-6 h-6 text-ag-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <h4 class="font-bold mb-1">We Make You Investor-Ready</h4>
+                <p class="text-white/90 text-sm">Transform your startup into an attractive investment opportunity</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="w-6 h-6 text-ag-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <h4 class="font-bold mb-1">Decades of Combined Experience</h4>
+                <p class="text-white/90 text-sm">Deep expertise in AgTech and AgBio from startup to exit</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="w-6 h-6 text-ag-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <h4 class="font-bold mb-1">Hands-On Approach</h4>
+                <p class="text-white/90 text-sm">We work shoulder-to-shoulder with your team until the job is done</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="w-6 h-6 text-ag-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <h4 class="font-bold mb-1">Extensive Network</h4>
+                <p class="text-white/90 text-sm">Access our network of domain experts and industry connections</p>
+              </div>
+            </div>
           </div>
+          <a 
+            href="mailto:hugh@agd2.com" 
+            class="btn inline-flex items-center justify-center px-8 py-4 bg-white text-ag-primary hover:bg-ag-cream font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 mt-8"
+          >
+            Send Us an Email
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

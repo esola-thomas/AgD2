@@ -5,12 +5,14 @@
   <!-- Background -->
   <div class="absolute inset-0 z-0">
     <img src={`${import.meta.env.BASE_URL}hero-bg.png`} alt="" class="w-full h-full object-cover" />
+    <!-- Overlay for better text readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-white/50"></div>
   </div>
 
   <div class="container-custom relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Content -->
-      <div class="text-center lg:text-left">
+      <div class="text-center lg:text-left bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
         <p class="text-ag-primary font-semibold text-lg mb-4">You are: A Startup</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-ag-ink mb-6 leading-tight">
           AgD2: Here to Bridge Your Innovation

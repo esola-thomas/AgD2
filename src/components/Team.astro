@@ -4,10 +4,7 @@ const team = [
     name: 'Nick Macris',
     title: 'Founding Partner',
     specialty: 'Business Development, Biopesticides',
-    image: {
-      src: 'https://static.wixstatic.com/media/ddd8b7_25ed9f88eab74dc5bc2bb44f808f0acd~mv2.jpg/v1/crop/x_99,y_92,w_376,h_416/fill/w_171,h_189,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/LI_Nick.jpg',
-      srcSet: 'https://static.wixstatic.com/media/ddd8b7_25ed9f88eab74dc5bc2bb44f808f0acd~mv2.jpg/v1/crop/x_99,y_92,w_376,h_416/fill/w_171,h_189,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/LI_Nick.jpg 1x, https://static.wixstatic.com/media/ddd8b7_25ed9f88eab74dc5bc2bb44f808f0acd~mv2.jpg/v1/crop/x_99,y_92,w_376,h_416/fill/w_342,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/LI_Nick.jpg 2x'
-    },
+    image: 'LI_Nick.avif',
     bio: 'Nick has 20+ years of experience in business development, strategy, M&A, manufacturing, and commercialization of early-stage biopesticide products. He is a polished, skilled negotiator and strategist who helps startups close critical gaps to become investor-ready.',
     education: [
       'M.B.A. - Ivey Business School, London, Ontario, Canada',
@@ -28,7 +25,7 @@ const team = [
     name: 'Dr. Kelly Smith',
     title: 'Founding Partner',
     specialty: 'R&D Strategy, Biopesticides',
-    image: '👩‍🔬',
+    image: 'Kelly.avif',
     bio: 'Kelly has more than 20 years\' experience building and leading research and development teams, as well as characterizing, registering, scaling and commercializing products in agricultural and industrial biotechnology. She brings deep expertise in R&D leadership, IP strategy, regulatory strategy, and scale-up.',
     education: [
       'Ph.D., Environmental Engineering Science (Applied Microbiology) - California Institute of Technology',
@@ -48,7 +45,7 @@ const team = [
     name: 'John Salmeron',
     title: 'Founding Partner',
     specialty: 'R&D, IP Strategy, Genetic Traits',
-    image: '🧬',
+    image: 'John.avif',
     bio: 'Since 2018, John and his consulting firm S Research Partners LLC have worked with diverse emerging companies to design and implement R&D strategies and monetize R&D assets. He draws on almost 30 years of experience at multinational and startup companies, providing support in strategic planning, project management, and business development.',
     education: [
       'Ph.D., Botany and Genetics - Duke University',
@@ -67,7 +64,7 @@ const team = [
     name: 'Hugh Young',
     title: 'Business Development Lead',
     specialty: 'Crop Protection, Product Development',
-    image: '🌱',
+    image: 'Hugh.avif',
     bio: 'Hugh has over 15 years of experience in crop protection, building novel R&D pipelines, managing diverse startup teams, and shuttling product concepts from early discovery to final commercialization. He brings deep expertise in biological product development, regulatory strategy, and technical partnerships.',
     education: [
       'Ph.D., Botany and Plant Pathology - Purdue University',
@@ -99,7 +96,13 @@ const team = [
         <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
           <div class="bg-gradient-to-r from-ag-primary to-ag-primary-600 p-6">
             <div class="flex items-center space-x-4">
-              <div class="text-6xl">{member.image}</div>
+              <div class="w-20 h-20 rounded-full overflow-hidden bg-white flex-shrink-0">
+                <img 
+                  src={`${import.meta.env.BASE_URL}${member.image}`} 
+                  alt={member.name}
+                  class="w-full h-full object-cover"
+                />
+              </div>
               <div class="flex-1">
                 <h3 class="text-2xl font-display font-bold text-white mb-1">
                   {member.name}
