@@ -1,0 +1,117 @@
+---
+const pricingModels = [
+  {
+    scope: 'Defined Project',
+    payment: 'One-time fee',
+    description: 'Perfect for specific deliverables like pitch deck creation, regulatory roadmap, or IP strategy assessment.',
+    features: [
+      'Clear scope and timeline',
+      'Fixed deliverables',
+      'Transparent pricing',
+      'Defined milestones'
+    ]
+  },
+  {
+    scope: 'As Needed',
+    payment: 'Hourly fee',
+    description: 'Flexible support for ad-hoc consulting, review sessions, or targeted expertise when you need it.',
+    features: [
+      'Pay only for what you use',
+      'Quick turnaround',
+      'Expert guidance on-demand',
+      'No long-term commitment'
+    ]
+  },
+  {
+    scope: 'Ongoing Support',
+    payment: 'Monthly retainer',
+    description: 'We become your fractional leadership team, providing continuous strategic guidance and execution support.',
+    features: [
+      'Dedicated team access',
+      'Proactive strategic planning',
+      'Priority availability',
+      'Maximum value and impact'
+    ],
+    highlight: true
+  }
+];
+---
+
+<section id="fees" class="section bg-white">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-ag-ink mb-6">
+        Your One-Stop Corporate Development Team
+      </h2>
+      <p class="text-xl text-ag-muted max-w-2xl mx-auto mb-4">
+        Our Business Model is What Works for YOU
+      </p>
+      <p class="text-lg text-ag-primary font-semibold">
+        SCOPE ⇔ PAYMENT
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {pricingModels.map(model => (
+        <div class={`rounded-xl p-8 transition-all duration-300 ${
+          model.highlight 
+            ? 'bg-ag-primary text-white shadow-2xl scale-105 ring-4 ring-ag-accent' 
+            : 'bg-ag-cream hover:shadow-xl'
+        }`}>
+          <div class="text-center mb-6">
+            <h3 class={`text-2xl font-display font-bold mb-2 ${
+              model.highlight ? 'text-white' : 'text-ag-ink'
+            }`}>
+              {model.scope}
+            </h3>
+            <div class={`text-3xl font-display font-bold ${
+              model.highlight ? 'text-ag-accent' : 'text-ag-primary'
+            }`}>
+              {model.payment}
+            </div>
+          </div>
+
+          <p class={`text-sm mb-6 ${
+            model.highlight ? 'text-white/90' : 'text-ag-muted'
+          }`}>
+            {model.description}
+          </p>
+
+          <ul class="space-y-3">
+            {model.features.map(feature => (
+              <li class="flex items-start">
+                <svg class={`w-5 h-5 mt-0.5 mr-3 flex-shrink-0 ${
+                  model.highlight ? 'text-ag-accent' : 'text-ag-primary'
+                }`} fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class={`text-sm ${
+                  model.highlight ? 'text-white' : 'text-ag-ink'
+                }`}>
+                  {feature}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <a 
+            href="#contact" 
+            class={`btn w-full mt-8 ${
+              model.highlight 
+                ? 'bg-white text-ag-primary hover:bg-ag-cream' 
+                : 'btn-outline'
+            }`}
+          >
+            Get Started
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-ag-muted italic">
+        Every engagement is tailored to your specific needs. Contact us to discuss the best approach for your startup.
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <!-- Bridge structure -->
+  <path d="M 50 350 Q 150 250, 250 300 L 250 350" stroke="#1c7c3c" stroke-width="4" fill="none"/>
+  <path d="M 550 350 Q 650 250, 750 300 L 750 350" stroke="#1c7c3c" stroke-width="4" fill="none"/>
+  <line x1="250" y1="300" x2="550" y2="300" stroke="#2e8b57" stroke-width="6"/>
+  
+  <!-- Support cables -->
+  <line x1="200" y1="280" x2="200" y2="350" stroke="#9acb61" stroke-width="2"/>
+  <line x1="300" y1="290" x2="300" y2="350" stroke="#9acb61" stroke-width="2"/>
+  <line x1="400" y1="295" x2="400" y2="350" stroke="#9acb61" stroke-width="2"/>
+  <line x1="500" y1="295" x2="500" y2="350" stroke="#9acb61" stroke-width="2"/>
+  <line x1="600" y1="290" x2="600" y2="350" stroke="#9acb61" stroke-width="2"/>
+  
+  <!-- Valley of Death curve -->
+  <path d="M 100 100 Q 400 350, 700 100" stroke="#dc2626" stroke-width="3" stroke-dasharray="8,4" fill="none" opacity="0.5"/>
+  
+  <!-- Labels -->
+  <text x="100" y="80" font-family="Inter" font-size="14" fill="#667085">Early Stage</text>
+  <text x="650" y="80" font-family="Inter" font-size="14" fill="#667085">VC-Backed</text>
+  <text x="350" y="380" font-family="Inter" font-size="16" font-weight="600" fill="#1c7c3c">We Bridge the Gap</text>
+</svg>

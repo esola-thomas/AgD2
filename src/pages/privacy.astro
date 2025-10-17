@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import Seo from '../components/Seo.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Privacy Policy - AgD2 Advisors';
+const description = 'Privacy policy for AgD2 Advisors';
+---
+
+<Base title={title} description={description}>
+  <Seo slot="seo" title={title} description={description} />
+  
+  <Header />
+  <main class="pt-24">
+    <section class="section">
+      <div class="container-custom max-w-4xl">
+        <h1 class="text-4xl font-display font-bold text-ag-ink mb-8">Privacy Policy</h1>
+        
+        <div class="prose prose-lg max-w-none">
+          <p class="text-ag-muted mb-6">
+            <strong>Last Updated:</strong> October 16, 2025
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-ag-ink mt-8 mb-4">Information We Collect</h2>
+          <p class="text-ag-muted mb-4">
+            When you contact us through our website, we may collect personal information including your name, email address, company name, and any information you provide in your message.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-ag-ink mt-8 mb-4">How We Use Your Information</h2>
+          <p class="text-ag-muted mb-4">
+            We use the information you provide to:
+          </p>
+          <ul class="list-disc pl-6 text-ag-muted mb-4 space-y-2">
+            <li>Respond to your inquiries</li>
+            <li>Provide advisory services</li>
+            <li>Improve our services</li>
+            <li>Send relevant information about our services (with your consent)</li>
+          </ul>
+
+          <h2 class="text-2xl font-display font-bold text-ag-ink mt-8 mb-4">Information Sharing</h2>
+          <p class="text-ag-muted mb-4">
+            We do not sell, trade, or otherwise transfer your personal information to third parties. We may share information with trusted partners who assist us in operating our website or conducting our business, so long as those parties agree to keep this information confidential.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-ag-ink mt-8 mb-4">Contact Us</h2>
+          <p class="text-ag-muted mb-4">
+            If you have questions about this Privacy Policy, please contact us at:
+          </p>
+          <p class="text-ag-muted mb-4">
+            Email: <a href="mailto:hugh@agd2.com" class="text-ag-primary hover:underline">hugh@agd2.com</a>
+          </p>
+        </div>
+
+        <div class="mt-12">
+          <a href="/" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>
